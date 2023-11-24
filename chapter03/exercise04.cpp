@@ -16,9 +16,8 @@ int main() {
     days = seconds / minute_per_seconds / hour_per_minutes / day_per_hours;
     hours = seconds / hour_per_minutes / minute_per_seconds % day_per_hours;
     minutes = seconds / minute_per_seconds % minute_per_seconds;
-    seconds = seconds % 60;
 
-    cout << seconds << " seconds = " << days << " days, " << hours << " hours, " << minutes << " minutes, " << seconds << " seconds" << endl;
+    cout << seconds << " seconds = " << days << " days, " << hours << " hours, " << minutes << " minutes, " << seconds % 60 << " seconds" << endl;
 
     return 0;
 }
