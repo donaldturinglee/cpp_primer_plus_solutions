@@ -21,7 +21,7 @@ int main() {
     cin >> age;
 
     cout << "Name: " << last_name << ", " << first_name << endl;
-    cout << "Grade: " << grade << endl;
+    cout << "Grade: " << char(grade + 1) << endl;
     cout << "Age: " << age << endl;
 
     return 0;
