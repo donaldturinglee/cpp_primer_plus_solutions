@@ -8,10 +8,10 @@ int main() {
     string first_name, last_name;
     string full_name;
 
-    cin.getline(first_name);
-    cin.getline(last_name);
+    getline(cin, first_name);
+    getline(cin, last_name);
 
-    full_name = first_name + last_name;
+    full_name = first_name + ", " + last_name;
 
     cout << "Here's the information in a single string: " << full_name << endl;
 
